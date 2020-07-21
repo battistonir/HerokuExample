@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Javascript Lottery</title>
+</head>
+
+<body>
+    <!-- h1 Lottery Game  -->
+    <h1>The Lottery Game</h1>
+    <!-- instructional message  -->
+    <h3>Welcome to the lottery game. Pick a number to get started</h3>
+    <!-- form  -->
+    <form id="lottery-pick">
+        <!-- dropdown for all the possible numbers  -->
+        <label for="user-lottery-number">Pick your number:</label>
+        <select id="user-lottery-number" name="userLotteryNumber">
+          <!-- dynamically generated options  -->
+          <option value="1">1</option>
+        </select>
+        <!-- submit button  -->
+        <input id="lottery-pick-submit" type="submit">
+    </form>
+    <!-- Lottery results  -->
+    <div id="lottery-results">
+        <!-- User's number  -->
+        <h2>Your Number: <span id="user-pick"></span></h2>
+        <!-- Lucky number  -->
+        <h2>Lucky Number: <span id="lucky-number"></span></h2>
+        <!-- Message (won or lost) -->
+        <h3 id="result-message"></h3>
+        <!-- play again button  -->
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

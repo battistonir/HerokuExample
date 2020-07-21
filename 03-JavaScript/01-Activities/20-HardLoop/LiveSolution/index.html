@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Loop</title>
+</head>
+
+<body>
+    <script>
+        //     * Starting from scratch, write code that loops through the following array and logs the name of each animal on the farm to the console:
+
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+
+        // * Then check if the first letter in the animal's name begins with a "c" or "o". If it does, create an alert saying, "Starts with 'c' or 'o'!"
+        // for (var i = 0; i < myFarm.length; i++) {
+        //     var currentAnimal = myFarm[i];
+        //     var firstLetter = currentAnimal[0] // currentAnimal.charAt(0)
+        //     if (firstLetter === "c" || firstLetter === "o") {
+        //         alert("Starts with 'c' or 'o'!");
+        //     }
+        // }
+
+        for (var i = 0; i < myFarm.length; i++) {
+            if (myFarm[i][0] === "c" || myFarm[i][0] === "o") {
+                alert("Starts with 'c' or 'o'!");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript Dump</title>
+</head>
+
+<body>
+
+    <!-- We created an empty HTML div. Note that there is no content inside. -->
+    <div id="empty-div"></div>
+
+    <script>
+        // select an element
+        var emptyDiv = document.querySelector("#empty-div");
+        console.log(emptyDiv);
+        // change it's text content
+        emptyDiv.textContent = "Hello World!!"
+
+        emptyDiv.textContent = "I like tater tots!!"
+
+        var pTag = document.createElement("p");
+        pTag.textContent = "Some paragraphn info."
+        pTag.setAttribute("class", "my-paragraph");
+        emptyDiv.appendChild(pTag);
+    </script>
+</body>
+
+</html>

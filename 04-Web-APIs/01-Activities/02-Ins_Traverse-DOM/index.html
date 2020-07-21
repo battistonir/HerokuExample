@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This Window</title>
+</head>
+
+<body>
+    <h2>Open the console to see the magic!</h2>
+    <nav>
+        <ul>
+            <li class="myToDo item">one item</li>
+            <li class="myToDo item">another item</li>
+            <li class="myToDo item">yet another item</li>
+        </ul>
+    </nav>
+
+    <script>
+        console.log(this);
+        console.dir(document.body.children[1].firstElementChild.firstElementChild);
+        var firstListItem = document.body.children[1].firstElementChild.firstElementChild;
+        for (var i = 0; i < firstListItem.classList.length; i++) {
+            var className = firstListItem.classList[i];
+            console.log(className);
+        }
+        // console.dir(document.body);
+    </script>
+</body>
+
+</html>

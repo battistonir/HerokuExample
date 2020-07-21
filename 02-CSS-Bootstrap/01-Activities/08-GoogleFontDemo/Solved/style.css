@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1:hover {
+    background: blue;
+}
+
+h1:active {
+    background-color: green;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    text-shadow: 4px 4px 4px #666;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: brown;
+}

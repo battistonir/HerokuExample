@@ -1,0 +1,23 @@
+A user with friends can add friends to the list so that they can keep track of there friends details.
+
+- What is the first thing we need so a user can add another user to the list?
+  
+- input (name input)
+- button that gets the name data and submits (gets clicked) 
+
+- the add person button is clicked (listen for that)
+- get the name data
+- add the name to the list
+  - store the new data (in an array? in the dom?)
+  - select the container Element
+  - create our new Element
+  - add our content to the Element
+  - place in the container element
+- empty the form field
+
+- the edit button is pressed
+- open up a popup an input field to take in the user's details (heading, textarea, save button)
+
+- the save button is pressed
+- store the from the textarea
+- close the popup

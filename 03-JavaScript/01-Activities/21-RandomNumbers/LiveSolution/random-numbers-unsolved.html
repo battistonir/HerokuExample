@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var myArray = [1, 4, 6, 4, 6, 8, 3]
+            // Loop 10 times
+        for (var i = 0; i < 10; i++) {
+            // Generate a random decimal number between 0 and 1
+            var randomDecimal = Math.random();
+            var scale = 57;
+            var offset = 1;
+            var randomDigit = Math.floor(randomDecimal * scale) + offset;
+
+            // Display in console
+            console.log(randomDigit);
+        }
+    </script>
+</body>
+
+</html>
