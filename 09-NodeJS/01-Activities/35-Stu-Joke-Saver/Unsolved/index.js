@@ -5,10 +5,26 @@ const axios = require("axios");
 const appendFileAsync = util.promisify(fs.appendFile);
 const readFileAsync = util.promisify(fs.readFile);
 
+// Data Requests
 const config = { headers: { accept: "application/json" } };
+// making an object a config object with options
 
-axios.get("https://icanhazdadjoke.com/", config)
-  .then(function(res) {
+axios
+  .get("https://icanhazdadjoke.com/", config)
+  .then(function (res) {
+    const { joke } = res.data;
+    console.log(joke);
 
-    console.log(res.data);
+    appendFileAsync("jokes.txt", joke + "\n").then(function () {
+      readFileAsync("jokes.txt", "utf8").then(function (data) {
+        console.log("\nSaved Dad Jokes!\n");
+        console.log(data);
+      });
+    });
+  })
+  .catch(function (err) {
+    if (err) {
+      console.log(err);
+      throw err;
+    }
   });

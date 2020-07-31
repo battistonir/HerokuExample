@@ -1,0 +1,25 @@
+{
+    type: "input",
+    message: "What us your name?",
+    name: "name",
+},
+{
+    type: "input",
+    message: "Where do you live?",
+    name: "location",
+},
+{
+    type: "input",
+    message: "What is your LinkedIn URL?",
+    name: "linkedIn",
+},
+{
+    type: "input",
+    message: "Tell us about yoruself.",
+    name: "bio",
+},
+{
+        type: "input",
+        message: "What is your gitHub username?",
+        name: "gitHub",
+    }
